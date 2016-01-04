@@ -1,13 +1,4 @@
-/*
-	重庆翔码电子科技有限公司
-	
-	ChongQing XiangMa Electronic Technology Co.,LTD
-	
-	http://www.xiangma.cc
-	wbh@xiangma.cc
-	QQ: 65957667
-	
- */
+
 
 package com.xiangma.bluetooth.le;
 
@@ -40,6 +31,7 @@ public class BluetoothLeService extends Service {
     private BluetoothManager mBluetoothManager;
     private BluetoothAdapter mBluetoothAdapter;
     //private String mBluetoothDeviceAddress;
+    //BluetoothGatt作为中央来使用和处理数据
     private BluetoothGatt mBluetoothGatt;
 	private ArrayList<byte[]> mRecvDataArrayList;
     private int mConnectionState = STATE_DISCONNECTED;

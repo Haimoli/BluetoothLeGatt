@@ -144,7 +144,11 @@ public class DeviceControlActivity extends Activity {
 							{
 								
 								String dateNewString=llString.substring(0, 8);
+								//Messages[1]为体温值
 								String[] Messages=dateNewString.split(",");
+								float TempValue=Float.parseFloat(Messages[1]);
+								float PulseValue=Float.parseFloat(Messages[0]);
+								
 								TempTextView.setText(Messages[1]);
 								PulseTextView.setText(Messages[0]);
 								System.out.println("数据集合"+new String(dateNewString));
